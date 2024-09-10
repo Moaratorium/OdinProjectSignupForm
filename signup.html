@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OdinProjectSignupDemo</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app-container">
+    <div id="side-image-container">
+        <img id="side-image" src="./assets/karsten-winegeart-xUyOWyCjJ_I-unsplash.jpg" />
+            <div id="image-band">
+                <h1 id="image-band-text">Rustic Cabins Co.</h1>
+            </div>
+            <div id="bottom-text">
+            <p id="image-credit">Photo by <a href="https://unsplash.com/@karsten116?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Karsten Winegeart</a> on <a href="https://unsplash.com/photos/a-house-sitting-on-top-of-a-lush-green-hillside-xUyOWyCjJ_I?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+            </p>
+        </div>
+    </div>
+    <div id="main-container">
+        <div id="header-text">
+            <p>Welcome to Rustic Cabins Co., where your escape to nature's tranquility begins. Nestled in the heart of picturesque landscapes, our charming cabins offer a seamless blend of rustic charm and modern comfort, providing an idyllic retreat for those seeking relaxation and adventure alike. Each cabin is thoughtfully designed to enhance your connection with the great outdoors while offering all the amenities you need for a cozy stay. Whether you're looking for a romantic getaway, a family vacation, or a solo sanctuary, Rustic Cabins Co. promises an unforgettable experience amidst breathtaking scenery and unparalleled serenity.</p>
+        </div>
+        <fieldset id="form-container">
+            <form action="#" method="get" class="form">
+                <div class="wrapper" id="name-wrapper">
+                <div id="fname-container" class="form-field">
+                    <label for="first-name">*First Name: <br></label>
+                    <input type="text" name="first-name" id="input-fname" required />
+                </div>
+                <div id="lname-container" class="form-field">
+                    <label for="last-name">*Last Name: <br></label>
+                    <input type="text" name="last-name" id="input-lname" required />
+                </div>
+            </div>
+            <div class="wrapper" id="contact-wrapper">
+                <div id="email-container" class="form-field">
+                    <label for="email">*Email: <br></label>
+                    <input type="email" name="email" id="input-email" required />
+                </div>
+                <div id="phone-container" class="form-field">
+                    <label for="phone-number">Phone Number: <br></label>
+                    <input type="tel" name="phone" id="input-phone"  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                </div>
+            </div>
+            <div class="wrapper" id="pass-wrapper">
+                <div id="pass-container">
+                    <label for="password">*Password: <br></label>
+                    <input type="password" name="password" id="input-password" minlength="4" maxlength="24" />
+                </div>
+                <div id="confirm-container">
+                    <label for="confirm-password">*Confirm: <br></label>
+                    <input type="password" name="confirm_password" id="input-confirm" minlength="4" maxlength="24" />
+                </div>
+            </div>
+            <div id="required-note">
+                <em><br>* required</em>
+            </div>
+            <div class="wrapper" id="submit-wrapper">
+            <input type="submit" value="Sign Up">
+        </div>
+            </form>
+            <div id="login-container">
+                <p>Already have an account? <a href="#" target="_blank">Log in here!</a></p>
+            </div>
+        </fieldset>
+    </div>
+</div>
+</body>
+</html>
